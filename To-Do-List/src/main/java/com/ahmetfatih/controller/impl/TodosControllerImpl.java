@@ -3,6 +3,7 @@ package com.ahmetfatih.controller.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,7 @@ import com.ahmetfatih.services.impl.TodosServiceImpl;
 
 @RestController
 @RequestMapping("/rest/api/todo")
+@CrossOrigin(origins = "*")
 public class TodosControllerImpl implements ITodosController {
 
 	@Autowired
